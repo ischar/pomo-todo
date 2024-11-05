@@ -3,8 +3,9 @@ const path = require("path");
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1280,
+    height: 720,
+    titleBarStyle: 'hiddenInset',
     webPreferences: {
       preload: path.join(__dirname, "preload.js"), // 필요시
       nodeIntegration: true,
